@@ -10,9 +10,6 @@
 @media(max-width:991px){
     p{font-size: 10px;}
 }
-@media(max-width:767px){
-    p{font-size: 8px;}
-}
 section{padding: 80px 0 0 0;}
 
 @media(max-width:991px){
@@ -260,14 +257,13 @@ body{
 }
 .abouthatha::after{
     position: absolute;
-    content: "";
     bottom:-10%;
-    right: -50%;
-    width: 800px;
-    height: 800px;
+    left: 150%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     filter: blur(100px);
-    background-image:radial-gradient(circle,#FF902DF2,#FC8C3696,#BC2DFF00) ;
+    background-color:#FF902DF2 ;
     z-index: -1;
 }
 .textblock-hatha{
@@ -338,7 +334,7 @@ body{
 }
 .title-whatcan{
     position: relative;
-    padding: 30px 0px 30px 30px;
+    padding: 30px;
     letter-spacing: 2px;
 }
 .title-whatcan::before{
@@ -384,7 +380,7 @@ body{
     bottom:50px;
     right: -50px;
     height: 1px;
-    width: 100%;
+    width: 500%;
     background-color: #FFF7F4;
 }
 @media(max-width:576px){
@@ -396,7 +392,7 @@ body{
         position: absolute;
         bottom: -20px;
         right: 0;
-        width: 150%;
+        width: 100%;
         height: 1px;
         z-index: 5;
         background-color: #FFF7F4;
@@ -419,7 +415,7 @@ body{
         position: absolute;
         top: -20px;
         left: 0;
-        width: 150%;
+        width: 100%;
         height: 1px;
         background-color: #FFF7F4;
     }
@@ -576,7 +572,7 @@ body{
     position: absolute;
     bottom: 0;
     left: -40px;
-    width: 100%;
+    width: 500%;
     height: 2px;
     background-color: #FFF7F4;
 }
@@ -716,28 +712,4 @@ body{
     margin-top: 80px;
     background-color: #FF902D;
     padding: 10px 0;
-}
-.footer__row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.footer-logo-block {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-.img-fluid {
-}
-.footer-logo-name {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 28px;
-}
-.footer-links-block {
-}
-.footer-links {
-    display: flex;
-    gap: 30px;
-
 }
