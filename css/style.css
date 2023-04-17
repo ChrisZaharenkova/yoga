@@ -572,7 +572,7 @@ body{
     position: absolute;
     bottom: 0;
     left: -40px;
-    width: 500%;
+    width: 120%;
     height: 2px;
     background-color: #FFF7F4;
 }
@@ -601,6 +601,9 @@ body{
     } 
     .block-prices__body{
        padding: 10px 20px 15px 20px;
+    }
+    .body-block-prices__title::after{
+        left: -20px;
     }
 }
 
