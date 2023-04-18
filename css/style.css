@@ -139,6 +139,9 @@ body{
     .main-row{
         min-height: 100vh;
     }
+    .main-item{
+        padding: 100px 0 0 0;
+    }
     .title{}
     .label{
         
