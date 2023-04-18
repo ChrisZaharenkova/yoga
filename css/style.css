@@ -675,7 +675,7 @@ body{
     top: 0;
     left: -25%;
     width: 500px;
-    height: 300%;
+    height: 100%;
     border-radius: 50%;
     -webkit-filter: blur(100px);
             filter: blur(100px);
@@ -692,7 +692,7 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 100%;
+    width: 300%;
     height: 1px;
     background-color: #FFF7F4;
 }
