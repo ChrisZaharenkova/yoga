@@ -453,6 +453,17 @@ body{
 
 }
 @media(max-width:576px){
+    .whatcan::before{
+        background: url('../img/mainBefore.png') no-repeat;
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+        top: -200px;
+        left: -200px;
+        z-index: -1;
+        filter: none;
+
+    }
     .whatcan-text1{
         position: relative;
     margin-bottom: 70px;}
