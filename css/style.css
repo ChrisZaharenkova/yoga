@@ -489,6 +489,7 @@ body{
     .joinme::after{
         bottom:30px;
         right: -30px;}
+        .joinme::before{top: 10px;left: 10px;}
 }
 
 /*------------------------HOWJOIN--------------------------*/
