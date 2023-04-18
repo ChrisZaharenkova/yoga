@@ -366,6 +366,7 @@ body{
     
 }
 /*-------------------WHATCAN-------------------*/
+.whatcan-logo{display: none;}
 .whatcan{position: relative;}
 .whatcan::before{
     position: absolute;
@@ -453,12 +454,22 @@ body{
 
 }
 @media(max-width:576px){
+    .img-whatcan img{border-radius: 50%;}
+    .title-whatcan{text-align: center;}
+    .title-whatcan::before{
+        height: 0;
+        width: 0;
+    }
+    .whatcan-logo{display: block;}
+    .whatcan-item-title{order: 3;}
+    .whatcan-item-logo{order: 2;}
+    .whatcan-item-text{order: 1;}
     .whatcan::before{
         background: url('../img/mainBefore.png') no-repeat;
         background-size: cover;
-        width: 500px;
-        height: 500px;
-        top: -200px;
+        width: 0px;
+        height: 0px;
+        bottom: -200px;
         left: -200px;
         z-index: -1;
         filter: none;
@@ -753,6 +764,11 @@ body{
         background-size: contain;
         background-position: center;
         height: 100vh;
+    }
+}
+@media(max-width:576px){
+    .benefits{
+        background-size: cover;
     }
 }
 /*---------FAQ----------------------*/
