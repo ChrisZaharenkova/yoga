@@ -165,6 +165,7 @@ body{
         top: -250px;
         left: -250px;
         z-index: -1;
+        filter: none;
     }
     
     .book-class{width: 155px;}
