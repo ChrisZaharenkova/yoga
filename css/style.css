@@ -4,7 +4,11 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-p{font-size: 14px;}
+p{font-size: 18px;}
+@media(max-width:576px){
+    p{font-size: 14px;}
+}
+
 section{padding: 80px 0 0 0;}
 
 @media(max-width:991px){
@@ -91,14 +95,14 @@ body{
     background-size: cover;
 }
 @media(max-width:1200px){
-    .title{font-size: 100px;}
+    .title{font-size: 64px;}
     .label{
         font-size: 16px;
     }
     .book-class a{font-size: 16px;}
 }
 @media(max-width:900px){
-    .title{font-size:64px;}
+    .title{font-size:56px;}
     .label{
         font-size: 14px;
     }
@@ -144,7 +148,7 @@ body{
     .main-item{
         
     }
-    .title{}
+    .title{font-size: 48px;}
     .label{
         
     }
@@ -166,8 +170,8 @@ body{
 .about-me::before{
     position: absolute;
     content: "";
-    top: 30%;
-    left: -30%;
+    top: 20%;
+    left: -40%;
     width: 800px;
     height: 800px;
     border-radius: 50%;
@@ -271,14 +275,16 @@ body{
 }
 .abouthatha::after{
     position: absolute;
-    bottom:-10%;
-    left: 150%;
-    width: 100%;
-    height: 100%;
+    content: "";
+    top: -50%;
+    right: -50%;
+    width: 800px;
+    height: 200%;
     border-radius: 50%;
-    -webkit-filter: blur(100px);
-            filter: blur(100px);
-    background-color:#FF902DF2 ;
+    -webkit-filter: blur(150px);
+            filter: blur(150px);
+    background-image:-o-radial-gradient(circle,#FF902DF2,#FC8C3696,#BC2DFF00) ;
+    background-image:radial-gradient(circle,#FF902DF2,#FC8C3696,#BC2DFF00) ;
     z-index: -1;
 }
 .textblock-hatha{
@@ -292,6 +298,8 @@ body{
     color: #FFF7F4;
 }
 .subtitle-hatha{
+    font-weight: 500;
+    font-size: 20px;
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -310,6 +318,7 @@ body{
     .title-hatha{
         text-align: center;
     }
+    .subtitle-hatha{ font-size: 16px;}
 }
 /*-------------------BIGPIC---------------------*/
 .bigpic{
@@ -380,6 +389,8 @@ body{
     background-color: #FFF7F4;
 }
 .joinme{
+    font-size: 36px;
+    color: #FFF7F4;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -394,7 +405,6 @@ body{
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    cursor: pointer;
     margin-top: -50px;
 }
 .joinme::after{
@@ -405,6 +415,19 @@ body{
     height: 1px;
     width: 500%;
     background-color: #FFF7F4;
+}
+.joinme::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FF902D;
+    filter: blur(30px);
+    top: 25px;
+    left: 25px;
+    z-index: -1;
+
 }
 @media(max-width:576px){
     .whatcan-text1{
@@ -443,6 +466,7 @@ body{
         background-color: #FFF7F4;
     }
     .joinme{
+        font-size: 24px;
         width: 110px;
         height: 110px;
         margin-top: 0;
@@ -610,8 +634,8 @@ body{
     content: "";
     position: absolute;
     bottom: 0;
-    left: -40px;
-    width: 138%;
+    right: -40px;
+    width: 500%;
     height: 2px;
     background-color: #FFF7F4;
 }
@@ -619,7 +643,15 @@ body{
     text-transform: uppercase;
     background-color: transparent;
 }
+@media(max-width:1400px){
+    .body-block-prices__title::after{
+    width: 138%;}
+}
 @media(max-width:991px){
+    .body-block-prices__title::after{
+        right: -40px;
+        width: 500%;
+    }
     .img-prices{
         display: none;
     }
@@ -646,24 +678,37 @@ body{
        padding: 10px 20px 15px 20px;
     }
     .body-block-prices__title::after{
-        left: -20px;
-        width: 120%;
+        right: -20px;
+        width: 500%;
     }
 }
 
 /*------------BENEFITS---------------*/
-.benefits{
+@media(min-width:1200px){.benefits{
     margin-top: 80px;
     height:100vh;
     background: url('../img/benefits.svg') no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+}}
+@media(max-width:1200px){
+    .benefits{
+        margin-top: 80px;
+        height:100vh;
+        background: url('../img/benefits.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
 }
-@media(max-width:576px){
+@media(max-width:991px){
+   .benefits{height: 650px;}
+}
+@media(max-width:767px){
     .benefits{
         background:url('../img/benefitssmall.svg') no-repeat;
-        background-size: cover;
-    background-position: center;
+        background-size: contain;
+        background-position: center;
+        height: 100vh;
     }
 }
 /*---------FAQ----------------------*/
@@ -757,6 +802,14 @@ body{
         -webkit-filter: blur(150px);
                 filter: blur(150px);
     }
+}
+.faq-subtitle{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+@media(max-width:576px){
+    .faq-subtitle{font-size: 12px;}
 }
 /*------------------FOOTER-------------------*/
 .footer{
