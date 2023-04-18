@@ -35,7 +35,12 @@ section{padding: 80px 0 0 0;}
 a{
     text-decoration: none;
 }
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
 body{
+   height: 100%;
     color: #fff7f4;
     min-height: 100%;
     background-color: #9B51E0;
@@ -324,13 +329,13 @@ body{
     .abouthatha::after{
         content: "";
         position: absolute;
-        background-color: #FF902D;
-        width: 400px;
-        height: 100%;
-        top: 0px;
-        left: -100px;
-        -webkit-filter: blur(200px);
-                filter: blur(200px);
+        background: url('../img/abouthathaBefore.png') no-repeat;
+        background-size: cover;
+        width: 1000px;
+        height: 1000px;
+        top: -10%;
+        right: -500px;
+        filter: blur(100px);
     }
     .title-hatha{
         text-align: center;
