@@ -137,10 +137,11 @@ body{
         min-height: 100vh;
     }
     .main-row{
+        flex-direction: column;
         min-height: 90vh;
     }
     .main-item{
-        padding: 100px 0 0 0;
+        padding: 100px 0 ;
     }
     .title{}
     .label{
