@@ -153,12 +153,12 @@ body{
         
     }
     .main::before{      
-        width: 150px;
-        height: 150px;
-        top: -120px;
-        left: -75px;
-        -webkit-filter: blur(75px);
-                filter: blur(75px);
+        width: 200px;
+        height: 200px;
+        top: -90px;
+        left: -90px;
+        -webkit-filter: blur(80px);
+                filter: blur(80px);
     }
     
     .book-class{width: 155px;}
@@ -216,11 +216,15 @@ body{
     .text-aboutme{display: none;}
     
     .about-me::before{
-        width: 300px;
-        height: 300px;
+        content: "";
+        position: absolute;
+        background-color: #FF902D;
+        width: 400px;
+        height: 400px;
+        top: 0px;
         left: -200px;
-        -webkit-filter: blur(100px);
-                filter: blur(100px);
+        -webkit-filter: blur(150px);
+                filter: blur(150px);
     }
 }
 /*-----------------ABOUTMYWORK---------------------*/
@@ -315,6 +319,17 @@ body{
 }
 .subtitle-hatha-2::after{background-color: #FFF7F4;}
 @media(max-width:576px){
+    .abouthatha::after{
+        content: "";
+        position: absolute;
+        background-color: #FF902D;
+        width: 400px;
+        height: 100%;
+        top: 0px;
+        left: -100px;
+        -webkit-filter: blur(200px);
+                filter: blur(200px);
+    }
     .title-hatha{
         text-align: center;
     }
@@ -668,6 +683,19 @@ body{
     }
 }
 @media(max-width:576px){
+    .prices{position: relative;}
+    .prices::after{
+        content: "";
+        position: absolute;
+        background-color: #FF902D;
+        width: 400px;
+        height: 100%;
+        top: 0px;
+        left: -200px;
+        -webkit-filter: blur(250px);
+                filter: blur(250px);
+                z-index: -1;
+    }
     .card-price{
         font-size: 48px;
     }
@@ -793,24 +821,24 @@ body{
 }
 @media(max-width:576px){
     .faq::before{
+        content: "";
+        position: absolute;
         background-color: #FF902D;
-        top: 20%;
-        left: -100%;
-        width: 600px;
-        height: 600px;
-        border-radius: 50%;
-        -webkit-filter: blur(150px);
-                filter: blur(150px);
+        width: 300px;
+        height: 400px;
+        top: -80px;
+        left: -60%;
+        -webkit-filter: blur(130px);
+                filter: blur(130px);
+                z-index: -1;
     }
 }
 .faq-subtitle{
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 14px;
 }
-@media(max-width:576px){
-    .faq-subtitle{font-size: 12px;}
-}
+
 /*------------------FOOTER-------------------*/
 .footer{
     margin-top: 80px;
