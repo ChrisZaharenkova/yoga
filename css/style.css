@@ -99,6 +99,7 @@ body{
     height: 2px;
     background-size: cover;
 }
+.mainPhoneImg{display: none;}
 @media(max-width:1200px){
     .title{font-size: 64px;}
     .label{
@@ -142,6 +143,9 @@ body{
         top: 13px;}
 }
 @media(max-width:576px){
+    .mainPhoneImg{display: block;
+    margin: 0 auto;}
+    .mainImg{display: none;}
     .main{
         min-height: 100vh;
     }
@@ -151,6 +155,7 @@ body{
         justify-content: center;
     }
     .main-item{
+        padding: 0 0 80px 0;
         
     }
     .title{font-size: 48px;}
