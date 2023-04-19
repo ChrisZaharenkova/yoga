@@ -492,14 +492,16 @@ body{
     .img-whatcan{
         position: relative;
         padding: 0 0px 50px 30px;
+        margin-top: 200px;
     }
     .img-whatcan::after{
         width: 0;
         height: 0;
     }
-    .joinme-button{-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;}
+    .joinme-button{-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;margin-top: -50px;}
     .joinme-text{-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;
         position: relative;
+        margin-top: -400px;
     }
     .joinme-text::before{
         content: "";
