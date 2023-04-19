@@ -625,7 +625,7 @@ body{
     color: black;
 }
 .card-price {
-    padding: 20px;
+    padding: 10px;
     font-size: 64px;
     background-color: rgba(217, 217, 217, 0.49);
    
@@ -818,7 +818,7 @@ body{
     position: absolute;
     bottom: 0;
     right: -20%;
-    width: 300%;
+    width: 600%;
     height: 1px;
     background-color: #FFF7F4;
 }
